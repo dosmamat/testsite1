@@ -1,0 +1,71 @@
+.conntentcall{
+	
+}
+.textCall{
+	position: relative;
+	width: 60%;
+	left: 15%;
+	height: 400px;
+}
+.textCall .forma{
+	position: relative;
+	width: 60%;
+	margin: auto;
+	background: #222;
+	overflow: auto;
+}
+.textCall .textTop{
+	position: relative;
+	max-width: 80%;
+	margin: auto;
+	padding: 2%;
+}
+.textCall input{
+	display: block;
+	height: 30px;
+	margin: 2%;
+	width: 94%;
+	font-size: 20px;
+}
+.textCall input:hover, .textCall textarea:hover {
+	background: #e2e3fe;
+}
+.textCall textarea{
+	margin: 2%;
+	width: 94%;
+	height: 100px;
+}
+#btOK{
+	background:#20d920;
+	color: white;
+	font-weight: bolder;
+}
+#btOK:hover{
+	background:green;
+}
+@media screen and (min-width: 1081px){
+	.conntentCall{
+		position: relative;
+		top:68px;
+	}
+}
+@media screen and (max-width: 1081px){
+	.textCall{
+		position: relative;
+		width: 100%;
+		height: 800px;
+		left: 0;
+		font-size: 30px;
+	}
+	.textCall .forma{
+		position: relative;
+		width: 80%;
+		background: #222;
+		overflow: auto;
+	}
+	.textCall .textTop{
+		position: relative;
+		width: 90%;
+		padding: 2%;
+	}
+}

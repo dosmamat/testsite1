@@ -1,0 +1,357 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	
+	background: url("../../img/fon1.jpg");
+	background-attachment: fixed;
+	font-family: "Times New Roman";
+	background-size: cover;
+
+}
+
+#desktop{
+	/*top: 200px;*/
+	display: none;
+}
+#burg a{
+	position: relative;
+	display: block;
+	width: 70px;
+	margin-left: 89%;	
+	top:15px;
+}
+#burg{
+	width: 98%;
+	background: #063252;
+	padding: 7.5px 0 7.5px  2%;
+	height: 120px;
+}
+
+span{
+	display: flex;
+	margin: 20px;
+	width: 40px;
+	height: 2px;
+	background: #c3c3c3;
+	z-index: 2;
+}
+#burg #top{
+	min-height: 4px;
+}
+#burg #mid{
+	min-height: 3px;
+}
+#burg #bottom{
+	min-height: 2px;
+}
+.mobile-tab{
+	display: block;
+	width: 100%;
+	background: #063252;
+	flex-direction: column;
+}
+.mobile-tab a{
+	font-size:  40px;
+	color: white;
+	text-decoration: none;
+	font-weight: lighter;
+	letter-spacing: 1px;
+
+}
+.mobile-tab li{
+	list-style-type: none;
+	margin: 2% 2%;
+	text-align: center;
+	padding:10px;
+}
+.mobile-tab ul{
+	padding: 1% 0;
+}
+.mobile-tab li:hover{
+	/*background: red;*/
+	box-shadow:  inset 1px 1px 5px grey;
+}
+@media screen and (min-width: 1081px){
+	.modile-tab, #burg, #mobile{
+		display: none;
+	}
+	.bar{
+		background: #063252;
+		position: fixed;
+		/*background: url("img/head.png");*/
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: flex-end;
+		margin-top: -100px; 
+		z-index: 2;
+		opacity: 0.9;
+	}
+	.mobile-tab{
+		display: none;
+
+	}
+	#desktop{
+		display: flex;
+	}
+	#desktop a{
+		text-decoration: none;
+		color: white;
+		margin: 0;
+		font-size: 25px;
+	}
+	 #desktop ul{
+		display: inline-flex;
+		list-style-type: none;
+		padding:0px;
+		margin-top: 100px;
+		margin-right: 60px;
+
+	}
+	 #desktop li{
+		color: white;
+		cursor: pointer;
+		background: #063252;
+		padding: 20px;
+		text-align: center;
+		width: 130px;
+		letter-spacing: 2px;
+		transition: all .02s ease-in-out;
+	}
+	#desktop li:hover{
+		background: black;
+		opacity: .3;
+		color: black;
+		box-shadow:  inset 1px 1px 1px white;
+	}
+	.conntent{
+	background:#d9e2ea;
+	top: 69px;
+	}
+}
+#desktop  a: hover {
+		color: black;
+	}
+.conntent{
+	position: relative;
+	width: 100%;
+	min-height: 1000px;
+	background:#d9e2ea;
+}
+.conntent .text {
+	position: relative;
+	top:30px;
+	width: 90%;
+	left: 5%;
+	/*background:red;*/
+}
+/*инфа , статья*/
+.textPhones {
+	position: relative;
+	top:30px;
+	width: 80%;
+	left: 10%;
+	/*background:red;*/
+}
+.conntent .textPhones ol{
+	font-size: 30px;
+	list-style-type: none;
+}
+a{	
+	/*color: #005c89;*/
+	text-decoration: none;
+}
+.conntent .textPhones li{
+	font-weight: bolder;
+	position: relative;
+	color: blue;
+	border-bottom: 2px solid #4c5b68;
+	max-width: 400px;
+	padding: 10px;
+}
+.conntent .textPhones li a:hover{
+	background: #8faac3;
+}
+
+/*подрробная информация о каждом телефоне, ниже*/
+.infoPhones{
+	position: relative;
+	top: 100px;
+	height: 3000px;
+	/*background: #99fff6;*/
+	
+}
+.infoPhones .phone1, .phone2 {
+	padding:1%;
+	position: relative;
+	width: 98%;
+	background: #65afc2;
+	min-height: 800px;
+	margin-bottom: 100px;
+}
+.infoPhones h1{
+	text-align: center;
+	padding: 2%;
+	color: #0a3145;
+
+}
+.infoPhones .photo{
+	position: relative;
+	float: left;
+	max-width: 58%;
+	/*background: #65a5b5;*/
+
+}
+.infoPhones .photo img{
+	max-width: 100%;
+	max-height: 700px;
+}
+.infoPhones .informationPhone{
+	position: relative;
+	width: 40%;
+	float: left;
+	/*background: #65afc2;*/
+	font-size: 30px;
+}
+/*описание+ характерисики ниже*/
+.acc-head{
+	background: #063252;
+	color: #d9e2ea;
+	margin-bottom: 1px;
+	/*padding-left: 20px;*/
+	padding: 15px;
+	font-weight: bolder;
+}
+.acc-body{
+	display: none;
+	font-size: 65%;
+	padding: 20px;
+	background: #65a5b5;
+}
+.acc-head:hover{
+	cursor: pointer;
+	background: #1c3a4f;
+}
+
+
+/*для мобильной версии о смартфонах*/
+@media screen and (max-width: 1081px){
+	.textPhones {
+		position: relative;
+		top:30px;
+		width: 60%;
+		left: 30%;
+	}
+	.conntent .textPhones ol{
+		font-size: 40px;
+	}
+	.infoPhones .phone1, .phone2 {
+	position: relative;
+	width: 100%;
+	background: #65afc2;
+	/*min-height: 1000px;*/
+	height: 41%;
+	margin-bottom: 100px;
+
+	}
+	.infoPhones .photo{
+		position: relative;
+		max-width: 90%;
+		left: 5%;
+
+	}
+	.infoPhones .photo img{
+		max-width: 100%;
+		max-height: 700px;
+	}
+	.infoPhones .informationPhone{
+		position: relative;
+		width: 90%;
+		left: 5%;
+		/*background: #65afc2;*/
+		font-size: 30px;
+		
+	}
+	#haracter{
+	max-height: 100px;
+	overflow-y: scroll;
+	}
+
+}
+/*.главная страница*/
+.mainBlock{
+	text-shadow: 2px 1px 1px black;
+	color: white;
+	/*position: fixed;*/
+
+	width: 100%;
+	text-align: center;	
+}
+.mainTopText{
+	position: relative;
+	width: 100%;
+}
+.mainBottomText{
+	position: relative;
+	width: 100%;
+	/*margin-top: 120px;*/
+}
+.mainTopTextMain{
+	position: relative;
+	/*background: #bee8fd;*/
+	font-size: 40px;
+	text-align: center;
+	height: 100px;
+	padding-top: 3%;
+}
+.navBlocks{
+	position: relative;
+	width: 100%;
+	height: 250px;
+	font-size: 25px;
+}
+.blockNav{
+	position: relative;
+	height: 150px;
+	width: 23%;
+	float: left;
+	/*background: #f6f6f6;*/
+	text-align: center;
+	padding: 1%;
+	background: rgba(44, 64, 96, 0.5);
+}
+.blockNav1{
+	position: relative;
+	height: 40px;
+	width: 98%;
+	float: left;
+	/*background: #f6f6f6;*/
+	text-align: left;
+	text-indent: 10%;
+	padding: 1%;
+	padding-top:1%;
+	border-bottom: 1px solid black;	
+}
+.blockNav1:hover, .blockNav:hover{
+	background: rgba(33,33,33,0.5);
+}
+@media screen and (max-width: 1081px){
+	.blockNav{
+		position: relative;
+		height: 100px;
+		width: 98%;
+		float: left;
+		/*background: #ddd;*/
+		text-align: center;
+		padding: 1%;
+		border-bottom: 1px solid black;	
+	}
+	.mainBottomText{
+	    margin-top: 260px;
+	}
+	.blockNav1{
+		font-size: 20px;
+	}
+}
